@@ -16,9 +16,14 @@ const Main = styled.div`
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+
+  height: 100vh;
+  background-color: ${({ theme }) => theme.colors.black};
 `;
 
 const Content = styled.div`
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
 `;
