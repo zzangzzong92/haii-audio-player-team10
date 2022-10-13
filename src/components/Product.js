@@ -33,6 +33,8 @@ const Info = styled.div`
   flex-direction: column;
 
   gap: 5px;
+
+  font-size: 14px;
 `;
 
 const Title = styled.div``;

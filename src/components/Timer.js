@@ -6,7 +6,7 @@ const Timer = () => {
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setTimeElapsed((prev) => prev + 30);
+      setTimeElapsed(prev => prev + 30);
     }, 30);
     return () => {
       clearInterval(timer);
@@ -27,7 +27,7 @@ const Container = styled.div`
   align-items: center;
 
   color: #abb1bd;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
 `;
 
