@@ -1,19 +1,30 @@
 import styled from 'styled-components';
 import Timer from './Timer';
 import Product from './Product';
+import Modal from './Modal';
+
+import { SettingIcon } from 'utils/icons';
 
 const Player = ({
   isRecording,
   handleOnRecording,
   handleOffRecording,
   audioInfo,
+  changeRecordTime,
+  maxRecordTime,
+  isSetting,
+  toggle,
 }) => {
   return (
     <Wapper>
-      <Header />
+      <Header>
+        <Icon>
+          <SettingIcon onClick={toggle} />
+        </Icon>
+      </Header>
       <Content>
         {audioInfo &&
-          audioInfo.map((item) => <Product key={item.url} item={item} />)}
+          audioInfo.map(item => <Product key={item.url} item={item} />)}
       </Content>
       <Footer>
         <IconWapper
@@ -28,6 +39,13 @@ const Player = ({
           <RecWapper>🔴 Recording...</RecWapper>
         </RecModal>
       )}
+      {isSetting && (
+        <Modal
+          toggle={toggle}
+          maxRecordTime={maxRecordTime}
+          changeRecordTime={changeRecordTime}
+        />
+      )}
     </Wapper>
   );
 };
@@ -41,11 +59,11 @@ const Wapper = styled.div`
   align-items: center;
   flex-direction: column;
 
-  width: 550px;
+  width: 500px;
   height: 1000px;
 
   border: 1px solid white;
-  border-radius: 10px;
+  border-radius: 40px;
   background-color: #1b1b1b;
 `;
 
@@ -59,8 +77,28 @@ const Header = styled.div`
   width: 100%;
   height: 10%;
 
-  border-radius: 10px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+
   background-color: black;
+`;
+
+const Icon = styled.div`
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: white;
+  font-size: 35px;
+
+  :hover {
+    animation: 1.5s animation infinite linear;
+  }
+
+  @keyframes animation {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 `;
 
 const Content = styled.div`
@@ -90,7 +128,8 @@ const Footer = styled.footer`
   width: 100%;
   height: 15%;
 
-  border-radius: 10px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
   background-color: black;
 `;
 
@@ -111,9 +150,10 @@ const RecModal = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 50;
 
-  height: 80%;
+  top: 0;
+
+  height: 85%;
   width: 100%;
 
   backdrop-filter: blur(1px);
