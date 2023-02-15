@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# 프리온보딩 2주차 과제 - 10Team
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### WEEK 2-1 - (주)HAII
+- 과제 목표 : 오디오 재생 프로그램 만들기
+- 수행 기간 : 2022/10/11 ~ 2022/10/13 (3일)
+- **진행 방식 : 라이브러리를 사용하지 않고 팀원들이 각자 구현한 코드 중 하나를 선정해 `best practice`를 논의하고 리팩토링**
+<br>
 
-## Available Scripts
+![haii_audio_player](https://user-images.githubusercontent.com/105163878/195708070-4d2ed083-946d-43ec-8d8f-b2d2fd5a9c2e.gif)
 
-In the project directory, you can run:
+<br><br>
 
-### `npm start`
+# 배포 링크
+- [링크](https://glittery-pithivier-1655dd.netlify.app/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<br><br>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# 10팀 소개 및 역할
+ 
+| 이름   | 역할  |
+| ------ | ------ |
+| 서수민 | 오디오 녹음 화면 |
+| 장종현 | 오디오 UI | 
+| 정훈조 | 오디오 재생 플레이어  |
 
-### `npm test`
+<br><br>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# 사용기술 스택
+- JavaScript
+- Reactjs
+- Styled-Components
 
-### `npm run build`
+<br><br>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# 구현 내용
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### 1. Library 사용하지 않고 Audio 녹음 및 재생 기능
+- 녹음 시간표기
+- 음원 리스트 확인 및 재생
+- 사용자에게 시간 값 입력받아 녹음 시간 설정
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<br>
 
-### `npm run eject`
+#### 2. 녹음된 음원 다운로드
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<br><br>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# 팀 노션
+- [링크](https://www.notion.so/wecode/10-cfe612e257584af6a579e02f5b69120e)
